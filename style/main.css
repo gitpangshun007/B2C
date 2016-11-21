@@ -1,0 +1,125 @@
+.wrap{height:1600px;width:100%;overflow: hidden;}
+/*最上方黑色导航*/
+.headBar{width:100%;height:40px;background-color: #333333;}
+/*导航左半部分*/
+.left_headBar{margin-left: 40px;}
+.left_headBar li{float:left;line-height: 40px;margin-right: 18px;font-size: 12px;}
+.left_headBar a{display: block;color:#a4a4a4;}
+.left_headBar hover:a{color:#f9f9f9}
+/*导航右半部分*/
+.right_headBar{padding-right:42px;}
+.leftBar{margin-right:24px;}
+.leftBar li{float:left;margin-right:14px;line-height: 40px;font-size:12px;}
+.leftBar a{display: block;color:#a4a4a4;}
+.shopText{background-color:#424242;font-size:12px;margin-right:42px;
+height: 40px;width:112px;line-height:40px; position: relative;}
+.shopText a{display: inline-block;font-size: 12px;color:#a4a4a4;margin-right: 18px;
+	margin-left: 38px;}
+.shopText img{position: absolute;top:12px;left:14px;}
+/*黑色导航下方白色导航部分*/
+.headerContainer{width:100%;height:100px;}
+.container{margin:0 46px;}
+.headerLogo{background: url(../images/icon/logo.jpg) no-repeat left center; margin:24px 0;height: 52px;
+width:52px;cursor: pointer;}
+.headerList{height:100px;margin-left:158px;padding-top:12px;padding-left:30px;}
+.headerList li{float:left;margin-left:18px;margin-top:30px;font-size: 16px;}
+.headerList a{display: block;color:#474747;}
+/*这个部分是重点，重点看*/
+.headerSearch .searchText{height:48.5px;width:228px;margin-top:26px;outline:none;
+border:1px solid #a4a4a4;padding-bottom:-1px;margin-left: 65px;}
+.headerSearch .searchBtn{height: 52px;width:52px;margin-top:26px;margin-left:-1px;
+border:1px solid #a4a4a4;outline:0;/*在按钮中加入图片值需要下面这行代码就行了*/background: url(../images/icon/scanner.jpg) no-repeat 
+10px center;cursor:pointer;}
+/*banner部分*/
+.banner{overflow: hidden;width:100%;}
+.sideBar{width:218px;background-color: #59595b;padding-bottom:26px;position: relative;
+margin-left:46px;}
+.sideBar li{margin-top: 30px;font-size:14px;margin-left:22px;line-height: 14px;}
+.sideBar a{color:#f4f4f4;}
+.sideBar img{position:absolute;right:20px;}
+.ad{width:982px;height:462px;border: 1px solid #59595b; overflow: hidden;position: relative;}
+/*图片中的向前选择和向后选择*/
+.ad .prev{position: absolute;top:200px;width:42px;height: 70px;background-color:rgba(0,0,0,0.4);
+text-align: center;line-height: 70px;font-size: 36px;color: #a7a7a7;}
+.ad .next{position: absolute;top:200px;right:0px;width:42px;height: 70px;background-color:rgba(0,0,0,0.4);
+text-align: center;line-height: 70px;font-size: 36px;color: #a7a7a7;}
+/*图片中的小圆圈选择器*/
+.ad ul{position:absolute;right:20px;bottom:10px;}
+.ad li{display:inline-block;background-color: #000;width:20px;height: 20px;margin-right:5px;
+line-height: 20px;text-align: center;font-size: 12px;}
+.ad a{color:#fff;}
+/*明星产品专区*/
+.starBar{width:100%;overflow: hidden;}
+.starWrap{margin:14px 86px 20px 46px;}
+.starWrap{display: flex;display: -webkit-flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;}
+.starWrap .first{width:219px;height: 159px;background-color: #605750;}
+.starWrap .first{display: flex;display:-webkit-flex;flex-wrap:wrap;flex-direction: row;}
+.starWrap .first div{width:71px;height: 78px;border:1px solid #655c55;text-align: center;position: relative;}
+.starWrap .first a{display:block;font-size:12px;color:#cec4bb;margin-top:50px;text-align:center;}
+.starWrap .first img{display:block;position: absolute;top:22px;left:26px;text-align:center;}
+.starWrap div{width:292px; height:158px;}
+.starWrap .last{margin-right:-17px;background: url("../images/product_green.jpg") no-repeat left top;cursor:pointer;}
+.starWrap .second{background: url("../images/product_yellow.jpg") no-repeat left top;cursor:pointer;}
+.starWrap .third{background: url("../images/product_red.jpg") no-repeat left top;cursor:pointer;}
+/*小米明星产品导航*/
+.starProduct{width:100%;overflow: hidden;}
+.starProduct .wrapProduct{margin: 0 70px 0px 46px;height:58px;position: relative;}
+.starProduct .starText{font-size: 22px;line-height:58px;}
+.starProduct .starText a{font-weight: lighter;color:#343434;}
+.starRight{position: absolute;right:0;top:16px;}
+.starRight .prev,.starRight .next{display:inline-block;height: 26px;width:34px;border:1px solid #b2b2b2;
+text-align: center;line-height: 26px;}
+.starRight a{color:#b2b2b2;font-size: 20px;font-weight: bold;}
+.starRight .prev{margin-right: -5px;}
+/*小米明星单品详情*/
+.productContainer{width:100%;margin-top:6px;padding-bottom:18px;}
+.productItem{display:flex;display:-webkit-flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;
+margin:0 70px 0px 46px;}
+.productItem .item1{width:228px;height: 316px;border-top:1.2px solid #fec760;text-align: center;}
+.productItem .item2{width:228px;height: 316px;border-top:1.2px solid #abd788;text-align: center;}
+.productItem .item3{width:228px;height: 316px;border-top:1.2px solid #6ab8f8;text-align: center;}
+.productItem .item4{width:228px;height: 316px;border-top:1.2px solid #ef7977;text-align: center;}
+.productItem .item5{width:228px;height: 316px;border-top:1.2px solid #52d5c3;text-align: center;}
+.item1,.item2,.item3,.item4,.item5{background: #fafafa;}
+.productImg{width:100%;height:62%;text-align: center;vertical-align: middle;}
+.productImg img{margin-top:36px;}
+.special img{margin:29px;}
+.productItem .description{font-size:11.6px;color:#b9b9bb;padding-top:8px;}
+.productItem .price{font-size:16px; color:#fa5a06;padding-top:14px;}
+/*智能硬件专区*/
+.grayZone{width:100%;background-color: #f5f5f5;padding-top:72px;}
+.itHardwareWrap{margin:18px 70px 0px 46px;}
+.itHardwareNav{height: 24px;line-height: 24px;margin-bottom: 18px;}
+.itHardwareNav .leftText{line-height: 24px;}
+.itHardwareNav .leftText a{font-size:22px;color:#4c4c4c;font-weight: lighter;}
+.itHardwareNav .rightText a{font-size:15px;color:#4c4c4c;line-height: 24px;}
+.itHardwareNav .rightText img{margin:-4px 0 0 7px;vertical-align:middle;}
+.itHarderwareContent{width:100%;}
+.leftContent{width:220px;height: 574px;background:url(../images/hardware.jpg) no-repeat left top;
+cursor: pointer;}
+.rightContent{width:976px;height: 100%;}
+.rightContent{display: flex;-webkit-display:flex;flex-direction: row;flex-wrap: wrap;}
+.rightContent .hdSize{width:230px;margin-left: 14px;
+height: 280px;background-color: #fff;}
+.rightContent .hdSize:nth-child(n+5){margin-top: 14px;}
+/*这个地方设置图片所占的宽高方式注意一下，用百分比*/
+.hdImg{width:100%;height: 62%;margin-top: 16px;}
+.hdItem{text-align: center;}
+/*用padding值来调整文字的上下距离*/
+.hd1 h3{padding-top:2px;}
+.hdItem .description{font-size:11.6px;color:#b9b9bb;padding-top:8px;}
+.hdItem .price{font-size:16px; color:#fa5a06;padding-top:14px;}
+
+/*左边大图片一分为二*/
+.leftContent_half .topImg{width:100%;height: 48.5%;border:1px solid #000;margin-bottom: 14px;}
+.leftContent_half .bottomImg{width:100%;border:1px solid #000;}
+
+
+
+
+ 
+
+
+
+
+
