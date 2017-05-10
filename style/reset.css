@@ -35,5 +35,7 @@ img{border:none;}
 /*浮动 */
 .fl{float:left;} 
 .fr{float:right;}
+/*border：none*/
+.borderNone{border:none;}
 
 
