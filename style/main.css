@@ -17,6 +17,10 @@ height: 40px;width:112px;line-height:40px; position: relative;}
 .shopText:hover{background-color:#fff;}
 .shopText a{display: inline-block;font-size: 12px;color:#a4a4a4;margin-right: 18px;
 	margin-left:18px;}
+.shopcart_tab{background-color: #fff;width:330px;height:120px;position: absolute;
+top:40px;right: 84px;line-height: 120px;font-size: 14px;font-weight: 400;
+text-align: center;box-shadow: 0 0 7px rgba(195,195,195,0.6);display: none;
+}
 .shopText a:hover{color:#ff6709;}
 .shopText img{position: absolute;top:12px;left:14px;}
 /*黑色导航下方白色导航部分*/
@@ -38,20 +42,37 @@ border:1px solid #a4a4a4;outline:0;/*在按钮中加入图片值需要下面这�
 .banner{overflow: hidden;width:100%;}
 .sideBar{width:218px;background-color: #59595b;padding-bottom:26px;position: relative;
 margin-left:46px;}
-.sideBar li{margin-top: 30px;font-size:14px;margin-left:22px;line-height: 14px;}
+.sideBar li{padding:15px 0px 15px 22px;font-size:14px;line-height: 14px;position: relative;}
 .sideBar a{color:#f4f4f4;}
-.sideBar a:hover{color:#ff6709;}
 .sideBar img{position:absolute;right:20px;}
-.ad{width:982px;height:462px;border: 1px solid #59595b; overflow: hidden;position: relative;}
-/*图片中的向前选择和向后选择*/
+.orange_tab{background-color: #ff6709;}
+.ad{width:982px;height:462px;border: 1px solid #59595b; position: relative;}
+/*箭头*/
+.icon-arrow{position: absolute;right:12px;z-index: 2000;}
+/*弹出层*/
+#tab_active{width: 530px;height: 462px;background-color:#fff; z-index: 1000;
+position: absolute;left:0;top:0;box-shadow: 3px 3px 3px rgba(77,212,246,0.1);
+display: flex;flex-wrap:wrap;opacity: 0;}
+.tab_content_span{display: inline-block;width:42px;
+  padding-left: 10px;padding-right: 28px;font-size:14px;
+  height: 42px;line-height: 42px;}
+.tab_content_shop{display: inline-block;width: 60px;height: 24px;border:1px solid #fa5a06;
+text-align: center;font-size: 12px;line-height: 24px;color:#fa5a06;}
+.tab_content_shop:hover{background-color:#fa5a06;color:#fff; }
+.tab_content_img{display: inline-block;width:42px;height: 42px;vertical-align: middle;}
+.tab_content{width: 225px;height: 42px;padding:18px 20px;}
+#ad_roll{position: absolute;left:0;top:0;}
+/*图片中的向前择和向后选择*/
+#prev,#next{display: none;}
 .ad .prev{position: absolute;top:200px;width:42px;height: 70px;background-color:rgba(0,0,0,0.4);
 text-align: center;line-height: 70px;font-size: 36px;color: #a7a7a7;}
 .ad .next{position: absolute;top:200px;right:0px;width:42px;height: 70px;background-color:rgba(0,0,0,0.4);
 text-align: center;line-height: 70px;font-size: 36px;color: #a7a7a7;}
 /*图片中的小圆圈选择器*/
-.ad ul{position:absolute;right:20px;bottom:10px;}
-.ad li{display:inline-block;background-color: #000;width:20px;height: 20px;margin-right:5px;
+.arrow{position:absolute;right:20px;bottom:10px;}
+.cubic{display:inline-block;background-color: #000;width:20px;height: 20px;margin-right:5px;
 line-height: 20px;text-align: center;font-size: 12px;}
+.active{background-color: #ff6709 !important;}
 .ad a{color:#fff;}
 /*明星产品专区*/
 .starBar{width:100%;overflow: hidden;}
@@ -78,8 +99,8 @@ text-align: center;line-height: 26px;}
 .starRight .prev{margin-right: -5px;}
 /*小米明星单品详情*/
 .productContainer{width:100%;margin-top:6px;padding-bottom:18px;overflow: hidden;}
-.ul_content{display: block;overflow: hidden;margin:0 70px 0px 46px;height:316px;width: 1204px;}
-.productItem{display:block;overflow:hidden;height:316px;width:2408px;}
+.ul_content{display: block;overflow: hidden;margin:0 70px 0px 46px;height:316px;width: 1204px;position: relative;}
+.productItem{display:block;overflow:hidden;height:316px;width:2480px;transition:.5s all ease-out;position: absolute;left:0;top:0}
 .productItem .item{float:left;width:228px;height: 316px;margin-right:16px;
 	display:inline-block;text-align: center;background: #fafafa;}
 .border1{border-top:1.2px solid #fec760;}
@@ -217,6 +238,7 @@ margin:0 70px 0px 46px;}
 .footerLinks .contact .custom{display:inline-block;width:110px;height:26px;line-height: 26px;
 	margin-top: 5px;border:1px solid #fea86d;
 }
+.footerLinks .contact .custom:hover{background-color:#ff6100; }
 
 
 
